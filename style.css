@@ -1,0 +1,433 @@
+
+
+body {
+  font-family: Verdana;
+  background-color:black;
+}
+header {
+  grid-area:header;
+  background:black;
+  text-align:center;
+  margin:5px;
+  padding:5px;
+  border-style:solid;
+  border-color:green;
+}
+.headerpic {
+    grid-area:headerpic;
+    padding:5px;
+    height:10vmax;
+    animation: logo .5s;
+}
+.headertext {
+  grid-area:headertext;
+  padding:5px;
+  height:10vmax;
+  animation:logo .5s;
+}
+
+.headerwrapper {
+    display:grid;
+    justify-items: center;
+    align-items:center;
+    grid-template-columns:40% auto;
+    grid-template-areas:
+    "headerpic headertext"
+}
+
+header h1 {
+    font-size:2vw;
+    color:#ffffff;
+    text-shadow: 2px 2px 5px #3217ff;
+    margin: 0;
+    animation: words 1.5s;
+}
+
+header h3 {
+    font-size:3vw;
+    color:#ffffff;
+    margin:0;
+    animation: words 2s;
+}
+nav {
+    background-color:black;
+    font-size:125%;
+    grid-area:nav;
+    text-align:center;
+    padding:.5em;
+    margin:5px;
+    /*These next 4 lines make it stick at the top*/
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+    color:green;
+    border-style:solid;
+    border-color:green;
+    min-height:70px;
+}
+.menu-item a{
+  color:white !important;
+}
+
+.first {
+    grid-area:first;
+    margin-left:0;
+}
+
+.second {
+    grid-area:second;
+}
+
+.third {
+    grid-area:third;
+}
+
+.fourth {
+    grid-area:fourth;
+}
+
+.fifth {
+    grid-area:fifth;
+}
+main {
+  grid-area:main;
+  background:none;
+  padding:5px;
+  margin:5px;
+  border-style:solid;
+  border-color:green;
+  color:white;
+}
+ main a {
+   color:#8F8FFF;
+ }
+footer {
+  grid-area:footer;
+  color:white;
+  font-size:1vw;
+  padding:5px;
+  clear:both;
+  margin:5px;
+  border-style:solid;
+  border-color:green;
+  Text-align:center;
+}
+/*html {
+    height:100%;
+}
+body {
+  font-family: Verdana;
+  background-color:black;
+  margin:5;
+  background:black no-repeat center center;
+  background-attachment:scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    overflow:hidden;
+    padding:5px;
+    }
+body:after{
+      content:"";
+      position:fixed;
+      top:0;
+      height:100vh;
+      left:0;
+      right:0;
+      z-index:-1;
+      background:black center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+*/
+
+.blockabc{
+  grid-area:blockabc;
+}
+.blocka {
+  grid-area:blocka;
+}
+.blockb {
+  grid-area:blockb;
+}
+.blockc {
+  grid-area:blockc;
+}
+.blockd {
+  grid-area:blockd;
+}
+.blocke {
+  grid-area:blocke;
+}
+.blockf {
+  grid-area:blockf;
+}
+.blockg {
+  grid-area:blockg;
+}
+audio {
+  max-width:100%;
+}
+video {
+  width:600px;
+  height:auto;
+  max-width:100%;
+  
+}
+.audio1 {
+  grid-area:audio1;
+  align-self:center;
+  place-self:center;
+}
+.audio2 {
+  grid-area:audio2;
+  align-self:center;
+}
+.video1 {
+  grid-area:video1;
+  display:grid;
+  place-self:center;
+}
+.video2 {
+  grid-area:video2;
+}
+
+
+.pic1 {
+  grid-area:pic1;
+  width:200px;
+  height:100px;
+}
+.pic2 {
+  grid-area:pic2;
+  width:200px;
+  height:200px;
+}
+.pic3 {
+  grid-area:pic3;
+  width:200px;
+  height:200px;
+}
+.pic4{
+  grid-area:pic4;
+  width:200px;
+  height:200px;
+}
+.pic5{
+  grid-area:pic5;
+  width:200px;
+  height:200px;
+}
+.pic6{
+  grid-area:pic6;
+  width:200px;
+  height:200px;
+}
+.pic7{
+  grid-area:pic7;
+  width:200px;
+  height:200px;
+}
+.pic8{
+  grid-area:pic8;
+  width:200px;
+  height:200px;
+}
+.pic9{
+  grid-area:pic9;
+  width:200px;
+  height:200px;
+}
+.pic10{
+  grid-area:pic10;
+  width:200px;
+  height:200px;
+}
+.pic11{
+  grid-area:pic11;
+  width:200px;
+  height:200px;
+}
+.pic12{
+  grid-area:pic12;
+  width:250px;
+  height:200px;
+}
+.pic13{
+  grid-area:pic13
+  width:200px;
+  height:150px;
+}
+.inline-block-element .d {
+  text-align:center;
+}
+/*---------------------------Mobile Layout----------------------------*/
+    .nestedgrid { /*for index*/
+  display:grid;
+  grid-template-columns:1fr;
+  justify-items:center;
+  grid-template-areas:
+    "blockabc"
+    "audio1"
+    "video1"
+    "audio2"
+    "video2"
+    "blockd"
+    "pic1"
+    "blocke"
+    "pic2"
+    "blockf"
+    "pic3";
+}
+.nestedgrid2 { /*for about*/
+display:grid;
+grid-template-columns: 1fr;
+justify-item:center;
+grid-template-areas:
+"blocka""blockb"
+;
+}
+
+
+
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+#flex-nav a {
+    color:white;
+    text-decoration:none;
+    }
+
+#flex-nav a:hover {
+    color:mediumspringgreen;
+    }
+    .container {
+      justify-items:start;
+    }
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px) {
+  
+    .nestedgrid { /*for index*/
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items:center;
+  grid-template-areas:
+    "blockabc blockabc"
+    "audio1 video1"
+    "audio2 video2"
+    "blockd blocke"
+    "pic1 pic2"
+    "blockf blockf"
+    "pic3 pic3";
+}
+.nestedgrid2 { /*for about*/
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-gap:1em;
+justify-item:center;
+grid-template-areas:
+"blocka blocka"
+"blockb blockb";
+}
+  
+}
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px) {
+ 
+ .container1 { /*for index*/
+  grid-template-columns:1fr;
+  justify-items:center;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+ 
+ 
+#navwrapper {
+    display:grid;
+    grid-template-areas:
+    "first second third fourth fifth";
+    }
+    
+.nestedgrid { /*for index*/
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  justify-items:center;
+  grid-template-areas:
+    "blockabc blockabc blockabc"
+    "audio1 video1 video1"
+    "audio2 video2 video2"
+    "blockd blocke blockf"
+    "pic1 pic2 pic3";
+}
+
+.nestedgrid2 { /*for about*/
+display:grid;
+grid-template-columns: 1fr 1fr;
+justify-item:center;
+grid-template-areas:
+"blocka blocka"
+"blockb blockb";
+}
+
+.nestedgrid3 { /*for packages*/
+display:grid;
+grid-gap:1em;
+grid-template-columns: 1fr 1fr;
+justify-item:center;
+grid-template-areas:
+"blocka blocka"
+"blockb blockb"
+"blockc blockd"
+"blocke blockf";
+}
+.nestedgrid4 { /*for events*/
+display:grid;
+grid-gap:1em;
+grid-template-columns: 1fr 1fr;
+justify-item:center;
+grid-template-areas:
+"blocka blocka"
+"blockb blockb"
+"blockc blockc"
+"blockd blocke"
+"blockf blockg";
+}
+.nestedgrid5 {/*for gallery*/
+display:grid;
+grid-gap:1em;
+grid-template-columns: 1fr 1fr 1fr;
+justify-item:center;
+grid-template:center;
+grid-template-areas:
+"blocka blocka blocka"
+"blockb blockb blockb"
+"blockc blockc blockc";
+}
+}
